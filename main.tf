@@ -10,16 +10,13 @@ terraform {
     }
   }
   required_version = ">= 1.1.0"
-
   cloud {
-    organization = "REPLACE_ME"
-
+    organization = "beallyoucanbe"
     workspaces {
-      name = "gh-actions-demo"
+      name = "api-driven-gitactions"
     }
   }
 }
-
 provider "aws" {
   region = "us-west-2"
 }
